@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "strict": false,
+    "outDir": "dist",
+    "lib": ["es6"],
+    "types": ["mocha", "node", "chai"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  }
+}
