@@ -17,7 +17,7 @@ describe('Amazon Task', async ()=> {
         await amazonPage.navigate();
         const accountName = await amazonPage.SignInButton.getText();
         console.log(accountName);
-        await amazonPage.signIntoAmazon('8607300095', 'Neha@2929');
+        await amazonPage.signIntoAmazon('', '');
         expect(await amazonPage.SignInButton.getText()).to.not.equal(accountName);
     });
 
