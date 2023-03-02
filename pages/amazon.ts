@@ -1,4 +1,4 @@
-import { By, Key, promise, WebElement, WebElementPromise } from "selenium-webdriver";
+import { By, Key, WebElement, WebElementPromise } from "selenium-webdriver";
 import {
   Browser,
   Page,
@@ -20,22 +20,22 @@ export class AmazonPage extends Page {
   public Email: TextInput;
 
   @findBy(By.css('input#continue'))
-  public Continue: TextInput;
+  public Continue: Button;
 
   @findBy(By.css('input#ap_password'))
   public Password: TextInput;
 
   @findBy(By.css('input#signInSubmit'))
-  public Login: TextInput;
+  public Login: Button;
 
   @findBy(By.css('input#twotabsearchtextbox'))
   public SearchBar: TextInput;
 
-  @findBy(By.css('div[cel_widget_id= MAIN-SEARCH_RESULTS-2] img'))
+  @findBy(By.css('div[cel_widget_id= MAIN-SEARCH_RESULTS-3] img'))
   public FirstSearchedItem: Button;
 
   @findBy(By.css('span.a-color-state'))
-  public searchedText: TextInput;
+  public searchedText: Button;
 
   @findBy(By.css('input#add-to-cart-button'))
   public AddToCart: Button;

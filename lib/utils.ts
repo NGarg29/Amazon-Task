@@ -1,10 +1,6 @@
 import "reflect-metadata";
 import { By } from "selenium-webdriver";
 
-export const delay = (ms: number) => {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-};
-
 export function findBy(selector: By | string) {
   return (target: any, propertyKey: string) => {
     const type = Reflect.getMetadata("design:type", target, propertyKey);

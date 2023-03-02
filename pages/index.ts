@@ -1,5 +1,1 @@
-import { AmazonPage } from "./amazon";
-
-export {
-  AmazonPage
-};
+export * from './amazon';

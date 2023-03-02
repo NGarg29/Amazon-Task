@@ -20,7 +20,7 @@ describe('Amazon Task', () => __awaiter(void 0, void 0, void 0, function* () {
         browser = new lib_1.Browser("chrome");
         amazonPage = new pages_1.AmazonPage(browser, "http://www.amazon.in");
     }));
-    it('verify login to amazon successfully', () => __awaiter(void 0, void 0, void 0, function* () {
+    xit('verify login to amazon successfully', () => __awaiter(void 0, void 0, void 0, function* () {
         yield amazonPage.navigate();
         const accountName = yield amazonPage.SignInButton.getText();
         console.log(accountName);

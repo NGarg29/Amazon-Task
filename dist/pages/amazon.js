@@ -79,7 +79,7 @@ __decorate([
 ], AmazonPage.prototype, "Email", void 0);
 __decorate([
     (0, lib_1.findBy)(selenium_webdriver_1.By.css('input#continue')),
-    __metadata("design:type", lib_1.TextInput)
+    __metadata("design:type", lib_1.Button)
 ], AmazonPage.prototype, "Continue", void 0);
 __decorate([
     (0, lib_1.findBy)(selenium_webdriver_1.By.css('input#ap_password')),
@@ -87,19 +87,19 @@ __decorate([
 ], AmazonPage.prototype, "Password", void 0);
 __decorate([
     (0, lib_1.findBy)(selenium_webdriver_1.By.css('input#signInSubmit')),
-    __metadata("design:type", lib_1.TextInput)
+    __metadata("design:type", lib_1.Button)
 ], AmazonPage.prototype, "Login", void 0);
 __decorate([
     (0, lib_1.findBy)(selenium_webdriver_1.By.css('input#twotabsearchtextbox')),
     __metadata("design:type", lib_1.TextInput)
 ], AmazonPage.prototype, "SearchBar", void 0);
 __decorate([
-    (0, lib_1.findBy)(selenium_webdriver_1.By.css('div[cel_widget_id= MAIN-SEARCH_RESULTS-2] img')),
+    (0, lib_1.findBy)(selenium_webdriver_1.By.css('div[cel_widget_id= MAIN-SEARCH_RESULTS-3] img')),
     __metadata("design:type", lib_1.Button)
 ], AmazonPage.prototype, "FirstSearchedItem", void 0);
 __decorate([
     (0, lib_1.findBy)(selenium_webdriver_1.By.css('span.a-color-state')),
-    __metadata("design:type", lib_1.TextInput)
+    __metadata("design:type", lib_1.Button)
 ], AmazonPage.prototype, "searchedText", void 0);
 __decorate([
     (0, lib_1.findBy)(selenium_webdriver_1.By.css('input#add-to-cart-button')),

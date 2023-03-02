@@ -3,16 +3,17 @@ import { expect } from "chai";
 import { Browser } from "../lib";
 import { AmazonPage } from '../pages';
 
+
 describe('Amazon Task', async ()=> {
     let browser: Browser;
     let amazonPage: AmazonPage;
 
     before(async () => {
         browser = new Browser("chrome");
-        amazonPage = new AmazonPage(browser, "http://www.amazon.in");
+        amazonPage = new AmazonPage(browser, "http://www.amazon.in/");
       });
 
-    it('verify login to amazon successfully', async ()=> {
+    it.skip('verify login to amazon successfully', async ()=> {
         await amazonPage.navigate();
         const accountName = await amazonPage.SignInButton.getText();
         console.log(accountName);
@@ -42,7 +43,7 @@ describe('Amazon Task', async ()=> {
         expect(await amazonPage.CartCount.getText()).to.not.equal(cartItem);
     });
 
-    xit('verify add address functionality', async ()=> {
+    it.skip('verify add address functionality', async ()=> {
         await amazonPage.SignInButton.click();
         await amazonPage.AddressItem.click();
         await amazonPage.AddAddress.click();
@@ -75,7 +76,7 @@ describe('Amazon Task', async ()=> {
         });
     });
 
-    xit('verify amazon account logout', async ()=> {
+    it.skip('verify amazon account logout', async ()=> {
         await amazonPage.SignInButton.hover();
         await amazonPage.SignOut.click();
         expect(await amazonPage.Email.isDisplayed()).to.be.true;

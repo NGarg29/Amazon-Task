@@ -1,5 +1,3 @@
-# Shiffali sachdeva
-
 ### Run Project
 
 **Note**: Please use MAC-OS to run this automation script.

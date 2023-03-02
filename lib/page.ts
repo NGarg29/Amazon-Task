@@ -1,9 +1,5 @@
 import { Browser } from "./";
 
-export interface NewablePage<T extends Page> {
-  new (browser: Browser): T;
-}
-
 export abstract class Page {
   private url: string;
 
